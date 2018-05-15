@@ -1,0 +1,6 @@
+CREATE TABLE message_bord.messages (
+    id INT(11) UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    title VARCHAR(70),
+    message VARCHAR(280),
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

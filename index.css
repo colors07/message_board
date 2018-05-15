@@ -1,0 +1,24 @@
+.message_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #ffee88;
+}
+
+.id {
+    /* flex-basis: 30px; */
+    width: 10%;
+    background-color: #88eeff;
+}
+
+.title {
+    /* flex-basis: 200px; */
+    width: 30%;
+    background-color: #80e0f0;
+}
+
+.message {
+    /* flex-basis: auto; */
+    width: 60%;
+    background-color: #66cce0;
+}
