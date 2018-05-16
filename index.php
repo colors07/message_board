@@ -44,10 +44,16 @@
                         $id = $record["id"];
                         $title = $record["title"];
                         $message = $record["message"];
+                        $image_path = $record["image_path"];
                         
                         print "<div class=\"col-md-1\">" . "<a href=\"./messages/message.php?id=$id\">" . htmlspecialchars($id, ENT_QUOTES, "UTF-8") . "</a>" . "</div>";
                         print "<div class=\"col-md-3\">" . htmlspecialchars($title, ENT_QUOTES, "UTF-8") . "</div>";
-                        print "<div class=\"col-md-8\">" . htmlspecialchars($message, ENT_QUOTES, "UTF-8") . "</div>";
+                        print "<div class=\"col-md-7\">" . htmlspecialchars($message, ENT_QUOTES, "UTF-8") . "</div>";
+                        print "<div class=\"col-md-1\">";
+                        if (isset($image_path)) {
+                            print "<a href=\"./php/$image_path\">画像</a>";
+                        }
+                        print "</div>";
                         
                         print "</div>";
                     }

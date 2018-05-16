@@ -17,12 +17,14 @@
         
         <div class="container">
             <h3>メッセージの新規作成ページ</h3>
-
-            <form action="../php/create.php" method="POST">
+            
+            <form action="../php/create.php" method="POST" enctype="multipart/form-data">
                 <h6>タイトル：</h6>
                 <input type="text" name="create_title" placeholder="タイトルを入力" required>
                 <h6>メッセージ：</h6>
                 <input type="text" name="create_message" placeholder="メッセージ本文を入力" required>
+                <h6>画像：</h6>
+                <input type="file" name="add_image">
                 <input type="submit" name="submit_create" value="投稿">
             </form>
         </div>
