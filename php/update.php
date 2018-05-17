@@ -3,7 +3,7 @@ if ($_POST["update_id"] && $_POST["update_title"] && $_POST["update_message"]) {
     $username = "root";
     $password = "";
 
-    $database = new PDO("mysql:host=localhost;dbname=message_bord;charset=UTF8;", $username, $password);
+    $database = new PDO("mysql:host=localhost;dbname=message_board;charset=UTF8;", $username, $password);
     
     $sql = "UPDATE messages SET title = :title, message = :message WHERE id = :id";
     $statement = $database->prepare($sql);

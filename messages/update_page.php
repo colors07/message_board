@@ -23,7 +23,7 @@
                     $username = "root";
                     $password = "";
                     
-                    $database = new PDO("mysql:host=localhost;dbname=message_bord;charset=UTF8;", $username, $password);
+                    $database = new PDO("mysql:host=localhost;dbname=message_board;charset=UTF8;", $username, $password);
                     
                     $sql = "SELECT * FROM messages WHERE id = :id";
                     $statement = $database->prepare($sql);

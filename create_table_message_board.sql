@@ -1,0 +1,8 @@
+CREATE DATABASE message_board;
+CREATE TABLE message_board.messages (
+    id INT(11) UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    title VARCHAR(70),
+    message VARCHAR(280),
+    image_path VARCHAR(300),
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

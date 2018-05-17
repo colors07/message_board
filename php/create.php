@@ -7,7 +7,7 @@ if ($_POST["create_title"] && $_POST["create_message"] && $_FILES["add_image"]["
     $username = "root";
     $password = "";
 
-    $database = new PDO("mysql:host=localhost;dbname=message_bord;charset=UTF8;", $username, $password);
+    $database = new PDO("mysql:host=localhost;dbname=message_board;charset=UTF8;", $username, $password);
     
     $sql = "INSERT INTO messages (title, message, image_path) VALUES(:title, :message, :image_path)";
     $statement = $database->prepare($sql);
@@ -21,7 +21,7 @@ if ($_POST["create_title"] && $_POST["create_message"] && $_FILES["add_image"]["
     $username = "root";
     $password = "";
 
-    $database = new PDO("mysql:host=localhost;dbname=message_bord;charset=UTF8;", $username, $password);
+    $database = new PDO("mysql:host=localhost;dbname=message_board;charset=UTF8;", $username, $password);
 
     $sql = "INSERT INTO messages (title, message) VALUES(:title, :message)";
     $statement = $database->prepare($sql);
